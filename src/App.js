@@ -3,7 +3,6 @@ import TextAnim from "./components/TextAnim";
 import Projects from './components/Projects'
 import {Element} from "react-scroll";
 import {useEffect, useState} from "react";
-import Footer from "./components/Footer";
 export function useIsVisible(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -25,10 +24,12 @@ export function useIsVisible(ref) {
 function App() {
   return (
     <Navbar>
+      <div className="w-full h-full bg-gradient-to-b from-slate-800 via-slate-700 to-slate-600 overflow-hidden">
+
       <div className="App scroll-smooth h-dvh overflow-auto overflow-x-clip">
-        <div className="w-dvw h-dvh bg-zinc-900">
+        <div className="w-dvw h-dvh">
           <div
-            className="w-full h-full flex flex-col items-center justify-center bg-slate-900 overflow-auto">
+            className="w-full h-full flex flex-col items-center justify-center overflow-auto">
             {/* Main content container */}
             <div className="w-1/2 h-full rounded-3xl flex justify-between items-center">
               <div className="grid grid-cols-4 grid-rows-4 gap-4">
@@ -42,6 +43,7 @@ function App() {
         </div>
       </div>
         {/*<Footer/>*/}
+      </div>
     </Navbar>
   );
 }

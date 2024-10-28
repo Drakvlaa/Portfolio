@@ -18,7 +18,7 @@ export default function Projects() {
   const ref6 = useRef();
   const isVisible6 = useIsVisible(ref6);
   return (
-    <div className="w-dvw h-full bg-slate-900 flex justify-center items-center">
+    <div className="w-dvw h-full flex justify-center items-center">
       <div className="grid grid-cols-4 grid-rows-2 w-2/3 h-full">
 
         <div ref={ref1}
